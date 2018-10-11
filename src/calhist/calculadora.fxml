@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="461.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calhist.calculadoraController">
+   <children>
+      <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Pane prefHeight="49.0" prefWidth="373.0" style="-fx-background-color: #00a2d5;">
+         <children>
+            <Label layoutX="135.0" layoutY="10.0" text="Calculadora" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="368.0" prefHeight="49.0" prefWidth="396.0" style="-fx-background-color: #00a2d5;">
+         <children>
+            <Label layoutX="135.0" layoutY="10.0" text="Historico" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Separator layoutX="376.0" layoutY="49.0" orientation="VERTICAL" prefHeight="411.0" prefWidth="3.0" />
+      <TableView layoutX="460.0" layoutY="131.0" prefHeight="200.0" prefWidth="200.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <Label layoutX="23.0" layoutY="85.0" text="Primeiro Operador" textFill="#00a2d5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtNumero1" layoutX="195.0" layoutY="86.0" prefHeight="25.0" prefWidth="55.0" />
+      <JFXTextField fx:id="txtNumero2" layoutX="195.0" layoutY="146.0" prefHeight="25.0" prefWidth="55.0" />
+      <Label layoutX="23.0" layoutY="145.0" text="Segundo Operador" textFill="#00a2d5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnsoma" layoutX="14.0" layoutY="313.0" onAction="#somar" prefHeight="36.0" prefWidth="79.0" text="Somar" textFill="#066380">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnsub" layoutX="90.0" layoutY="310.0" onAction="#subtrair" prefHeight="42.0" prefWidth="97.0" text="Subtraçao " textFill="#066380">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btndiv" layoutX="181.0" layoutY="310.0" onAction="#dividir" prefHeight="42.0" prefWidth="79.0" text="Dividir" textFill="#066380">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnmult" layoutX="262.0" layoutY="310.0" onAction="#multiplicar" prefHeight="42.0" prefWidth="110.0" text="Multiplicar" textFill="#066380">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtResul" layoutX="223.0" layoutY="218.0" prefHeight="25.0" prefWidth="137.0" />
+      <Label layoutX="118.0" layoutY="217.0" prefHeight="27.0" prefWidth="89.0" text="Resultado" textFill="#00a2d5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
